@@ -63,10 +63,12 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 --keymap.del("n", "<c-_>")
 --keymap.del("n", "<leader>gg")
 
-keymap.set('n', '<Leader>lg', ':LazyGit<CR>', { noremap = true, silent = true })
+keymap.set("n", "<Leader>lg", ":LazyGit<CR>", { noremap = true, silent = true })
 -- lazygit
 --keymap.set("n", "<leader>lg", function()
 --Util.terminal({ "lazygit" }, { cwd = Util.root(), esc_esc = false, ctrl_hjkl = false })
 --end, { desc = "Lazygit (root dir)" })
 --keymap.set({ "n", "i", "v" }, "<C-/>", term_map.toggle)
 --keymap.set({ "n", "i", "v" }, "<C-_>", term_map.toggle)
+
+keymap.set("t", "<Esc>", "<C-\\><C-n><CR>")
