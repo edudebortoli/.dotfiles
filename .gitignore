@@ -4,3 +4,5 @@
 !*/nvim/
 !*/
 
+yarn/global/node_modules/minipass-sized
+nvim.lazy
