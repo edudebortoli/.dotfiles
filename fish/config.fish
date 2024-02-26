@@ -11,3 +11,7 @@ alias vim="nvim"
 alias g="git"
 alias lg="lazygit"
 alias ll="exa -l"
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

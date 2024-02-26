@@ -5,7 +5,9 @@ require("conform").setup({
 		lsp_fallback = true,
 	},
 	formatters_by_ft = {
+		dart = { "dart_format" },
 		lua = { "stylua" },
+		python = { "isort", "black" },
 		svelte = { { "prettierd", "prettier" } },
 		javascript = { { "prettierd", "prettier" } },
 		typescript = { { "prettierd", "prettier" } },
@@ -18,7 +20,7 @@ require("conform").setup({
 		ruby = { "standardrb" },
 		markdown = { { "prettierd", "prettier" } },
 		erb = { "htmlbeautifier" },
-		html = { { "angularls", "html" } },
+		html = { { "prettierd", "prettier", "html" } },
 		bash = { "beautysh" },
 		proto = { "buf" },
 		rust = { "rustfmt" },
