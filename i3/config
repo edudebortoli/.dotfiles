@@ -53,8 +53,8 @@ new_window pixel 1
 # hide_edge_borders both
 
 # Set inner/outer gaps
-gaps inner 5
-gaps outer 3
+gaps inner 2
+gaps outer 1
 
 # show window title bars (not officially supported with i3gaps)
 #default_border normal
@@ -305,6 +305,7 @@ set $ws10 "10"
 exec_always --no-startup-id picom 
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id syncthing
+exec --no-startup-id blueberry-tray
 
 #############################################
 # autostart applications/services on login: #
@@ -381,15 +382,6 @@ exec --no-startup-id /usr/bin/dunst
 ###############
 # if you do not use dex: exec --no-startup-id dex --autostart --environment i3
 # you need to have tray apps started manually one by one:
-
-# start blueberry app for managing bluetooth devices from tray:
-#exec --no-startup-id blueberry-tray
-
-# networkmanager-applet
-#exec --no-startup-id nm-applet
-
-# clipman-applet
-#exec --no-startup-id xfce4-clipman
 
 ##################
 # floating rules #
