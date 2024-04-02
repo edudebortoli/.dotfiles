@@ -280,7 +280,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
-bindsym $mod+w exec /usr/bin/firefox
+bindsym $mod+w exec /usr/bin/min-browser
 bindsym $mod+n exec /usr/bin/thunar
 
 # Power Profiles menu switcher (rofi)
