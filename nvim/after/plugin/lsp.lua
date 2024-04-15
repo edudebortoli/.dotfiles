@@ -1,4 +1,5 @@
 local lsp_zero = require("lsp-zero")
+local lsp = require("lspconfig")
 
 lsp_zero.preset("recommended")
 
@@ -35,10 +36,10 @@ lsp_zero.ensure_installed({
   "rust_analyzer",
 })
 
-require("lspconfig").tsserver.setup({})
-require("lspconfig").lua_ls.setup({})
+lsp.tsserver.setup({})
+lsp.lua_ls.setup({})
 
-require("lspconfig").dartls.setup({
+lsp.dartls.setup({
   cmd = { "dart", "language-server", "--protocol=lsp" },
   filetypes = { "dart" },
   init_options = {
@@ -55,12 +56,10 @@ require("lspconfig").dartls.setup({
       updateImportsOnRename = true,
     },
   },
-  on_attach = on_attach,
-
 })
-require("lspconfig").pyright.setup({})
-require("lspconfig").rust_analyzer.setup({})
-require("lspconfig").cssls.setup({})
+lsp.pyright.setup({})
+lsp.rust_analyzer.setup({})
+lsp.cssls.setup({})
 
 -- Fix Undefined global 'vim'
 lsp_zero.configure("lua-language-server", {
@@ -90,7 +89,7 @@ lsp_zero.setup_nvim_cmp({
 })
 
 lsp_zero.set_preferences({
-  suggest_lsp_servers = false,
+  suggest_lsp_servers = true,
   sign_icons = {
     error = "E",
     warn = "W",
