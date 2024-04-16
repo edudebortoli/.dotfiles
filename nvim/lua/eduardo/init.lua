@@ -1,3 +1,3 @@
-require("eduardo.remap")
-require("eduardo.options")
+require 'eduardo.remap'
+require 'eduardo.options'
 
