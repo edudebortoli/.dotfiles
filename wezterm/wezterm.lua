@@ -16,9 +16,11 @@ end
 -- config.color_scheme = "tokyonight_storm"
 
 -- config.window_decorations = "NONE"
--- config.font = wezterm.font("SpaceMono Nerd Font")
+-- config.font = wezterm.font("Liberation Mono")
+--config.font = wezterm.font("Nimbus Mono PS")
+config.font = wezterm.font("Noto Mono")
 
-config.font_size = 11
+config.font_size = 16
 config.hide_mouse_cursor_when_typing = true
 config.enable_tab_bar = false
 config.window_background_opacity = 0.8
