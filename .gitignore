@@ -78,3 +78,5 @@ fvm
 gnome-control-center/backgrounds
 libreoffice/4/user
 syncthing
+QtProject.conf
+nvim.old
