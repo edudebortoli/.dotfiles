@@ -7,7 +7,7 @@ local config = {}
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
 if wezterm.config_builder then
-  config = wezterm.config_builder()
+	config = wezterm.config_builder()
 end
 
 -- This is where you actually apply your config choices
@@ -20,7 +20,7 @@ end
 --config.font = wezterm.font("Nimbus Mono PS")
 config.font = wezterm.font("Noto Mono")
 
-config.font_size = 16
+config.font_size = 14
 config.hide_mouse_cursor_when_typing = true
 config.enable_tab_bar = false
 config.window_background_opacity = 0.8

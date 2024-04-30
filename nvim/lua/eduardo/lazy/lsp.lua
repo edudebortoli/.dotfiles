@@ -12,6 +12,11 @@ return {
 		"saadparwaiz1/cmp_luasnip",
 		"j-hui/fidget.nvim",
 	},
+	opts = function()
+		require("lspconfig").dartls.setup({
+			cmd = { "dart", "language-server", "--protocol=lsp" },
+		})
+	end,
 
 	config = function()
 		local cmp = require("cmp")
@@ -70,6 +75,27 @@ return {
 				["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
 				["<C-y>"] = cmp.mapping.confirm({ select = true }),
 				["<C-Space>"] = cmp.mapping.complete(),
+				vim.keymap.set("n", "K", function()
+					vim.lsp.buf.hover()
+				end, { remap = false }),
+				vim.keymap.set("n", "<leader>gr", function()
+					vim.lsp.buf.references()
+				end, { remap = false }),
+				vim.keymap.set("n", "gd", function()
+					vim.lsp.buf.definition()
+				end, { remap = false }),
+				vim.keymap.set("n", "<leader>vrn", function()
+					vim.lsp.buf.rename()
+				end, { remap = false }),
+				vim.keymap.set("n", "<leader>vws", function()
+					vim.lsp.buf.workspace_symbol()
+				end, { remap = false }),
+				vim.keymap.set("n", "<leader>vd", function()
+					vim.diagnostic.open_float()
+				end, { remap = false }),
+				vim.keymap.set("n", "<leader>ca", function()
+					vim.lsp.buf.code_action()
+				end, { remap = false }),
 			}),
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
