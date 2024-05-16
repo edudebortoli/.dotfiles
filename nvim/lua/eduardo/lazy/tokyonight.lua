@@ -4,6 +4,6 @@ return {
 	priority = 1000,
 	opts = {
 		transparent = true,
-		style = "moon",
+		style = "storm",
 	},
 }
