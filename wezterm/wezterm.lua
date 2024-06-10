@@ -15,10 +15,10 @@ end
 -- For example, changing the color scheme:
 -- config.color_scheme = "tokyonight_storm"
 
--- config.window_decorations = "NONE"
--- config.font = wezterm.font("Liberation Mono")
+config.window_decorations = "NONE"
+config.font = wezterm.font("Liberation Mono")
 --config.font = wezterm.font("Nimbus Mono PS")
-config.font = wezterm.font("Noto Mono")
+--config.font = wezterm.font("Noto Mono")
 
 config.font_size = 14
 config.hide_mouse_cursor_when_typing = true
