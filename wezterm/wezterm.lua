@@ -16,7 +16,9 @@ end
 -- config.color_scheme = "tokyonight_storm"
 
 config.window_decorations = "NONE"
-config.font = wezterm.font("Liberation Mono")
+-- config.font = wezterm.font("Liberation Mono")
+-- config.font = wezterm.font("DaddyTimeMono Nerd Font")
+config.font = wezterm.font("EnvyCodeR Nerd Font")
 --config.font = wezterm.font("Nimbus Mono PS")
 --config.font = wezterm.font("Noto Mono")
 

@@ -1,6 +1,6 @@
 if status is-interactive
     nvm use 18 >&-
-    echo -welcome- Eduardo
+    echo welcome Eduardo
     echo you are using node 18
     # Commands to run in interactive sessions can go here
 end
