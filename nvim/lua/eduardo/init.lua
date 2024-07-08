@@ -1,7 +1,7 @@
 require("eduardo.remap")
 require("eduardo.options")
 require("eduardo.lazy_init")
-vim.cmd([[colorscheme nvimgelion]])
+vim.cmd([[colorscheme onenord]])
 
 function Hide()
 	-- Set transparent background
@@ -12,6 +12,6 @@ end
 -- Create a command to call the function
 vim.api.nvim_create_user_command("Hide", function()
 	Hide()
-end, { nargs = 1 })
+end, { nargs = 0 })
 
 Hide()
