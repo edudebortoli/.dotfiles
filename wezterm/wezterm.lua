@@ -14,7 +14,7 @@ end
 
 -- For example, changing the color scheme:
 -- config.color_scheme = "tokyonight_storm"
-
+config.color_scheme = "Nord (Gogh)"
 config.window_decorations = "NONE"
 -- config.font = wezterm.font("Liberation Mono")
 -- config.font = wezterm.font("DaddyTimeMono Nerd Font")
