@@ -78,12 +78,15 @@ return {
 				vim.keymap.set("n", "K", function()
 					vim.lsp.buf.hover()
 				end, { remap = false }),
+				vim.keymap.set("n", "<leader>gi", function()
+					vim.lsp.buf.implementation()
+				end, { remap = false, desc = "Go to implementation" }),
 				vim.keymap.set("n", "<leader>gr", function()
 					vim.lsp.buf.references()
-				end, { remap = false }),
+				end, { remap = false, desc = "Go to references" }),
 				vim.keymap.set("n", "gd", function()
 					vim.lsp.buf.definition()
-				end, { remap = false }),
+				end, { remap = false, desc = "Go to definition" }),
 				vim.keymap.set("n", "<leader>vrn", function()
 					vim.lsp.buf.rename()
 				end, { remap = false }),

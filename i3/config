@@ -280,7 +280,8 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
-bindsym $mod+w exec /usr/bin/google-chrome
+# bindsym $mod+w exec /usr/bin/google-chrome
+bindsym $mod+w exec /usr/bin/firefox
 bindsym $mod+n exec /usr/bin/nautilus
 
 # Power Profiles menu switcher (rofi)
@@ -340,7 +341,7 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill ~/Pictures/wallpaper/evangelion.jpg
+exec --no-startup-id sleep 1 && feh --bg-fill ~/Pictures/wallpaper/Eternal Warrios WP 01.jpg
 
 # set powersavings for display:
 #exec --no-startup-id xset s 480 dpms 600 600 600
