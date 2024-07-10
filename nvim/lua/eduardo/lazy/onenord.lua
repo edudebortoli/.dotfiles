@@ -22,7 +22,7 @@ return {
 			},
 			-- Inverse highlight for different groups
 			inverse = {
-				match_paren = true,
+				match_paren = false,
 			},
 			custom_highlights = {}, -- Overwrite default highlight groups
 			custom_colors = {}, -- Overwrite default colors
