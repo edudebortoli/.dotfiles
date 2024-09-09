@@ -22,7 +22,7 @@ config.window_decorations = "NONE"
 -- config.font = wezterm.font("Nimbus Mono PS")
 config.font = wezterm.font("Noto Mono")
 
-config.font_size = 12
+config.font_size = 10
 config.hide_mouse_cursor_when_typing = true
 config.enable_tab_bar = false
 config.window_background_opacity = 0.8

@@ -17,6 +17,3 @@ alias ll="exa -l"
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/eduardo/Documents/github/google-cloud-sdk/path.fish.inc' ]; . '/home/eduardo/Documents/github/google-cloud-sdk/path.fish.inc'; end
