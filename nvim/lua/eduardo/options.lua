@@ -85,6 +85,9 @@ vim.opt.scrolloff = 10
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 
+vim.opt.conceallevel = 2
+vim.opt.concealcursor = "nc"
+
 -- highlight yanked text for 200ms using the "Visual" highlight group
 vim.cmd([[
   augroup highlight_yank

@@ -9,9 +9,17 @@ function Hide()
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
 end
 
+function Chat()
+	return vim.fn["codeium#Chat"]()
+end
+
 -- Create a command to call the function
 vim.api.nvim_create_user_command("Hide", function()
 	Hide()
+end, { nargs = 0 })
+
+vim.api.nvim_create_user_command("Chat", function()
+	Chat()
 end, { nargs = 0 })
 
 Hide()
