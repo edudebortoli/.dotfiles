@@ -1,7 +1,7 @@
 require("eduardo.remap")
 require("eduardo.options")
 require("eduardo.lazy_init")
-vim.cmd([[colorscheme onenord]])
+vim.cmd([[colorscheme tokyobones]])
 
 function Hide()
 	-- Set transparent background
