@@ -1,6 +1,7 @@
 require("eduardo.remap")
 require("eduardo.options")
 require("eduardo.lazy_init")
+require("eduardo.open-env")
 vim.cmd([[colorscheme tokyobones]])
 
 function Hide()

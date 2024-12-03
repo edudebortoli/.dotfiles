@@ -53,8 +53,8 @@ new_window pixel 1
 # hide_edge_borders both
 
 # Set inner/outer gaps
-gaps inner 2
-gaps outer 1
+gaps inner 7
+gaps outer 2
 
 # show window title bars (not officially supported with i3gaps)
 #default_border normal
@@ -314,7 +314,7 @@ set $ws10 "10"
 
 exec_always --no-startup-id picom 
 exec_always --no-startup-id nm-applet
-exec_always --no-startup-id syncthing
+#exec_always --no-startup-id syncthing
 exec --no-startup-id blueberry-tray
 
 #############################################
