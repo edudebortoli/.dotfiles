@@ -538,5 +538,5 @@ bindsym $mod+Shift+e mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 #exec setxkbmap -option compose:ralt
 
 exec --no-startup-id flameshot
-bindsym $mod+Shift+s exec flameshot gui -p ~/Pictures/screenshots
+bindsym $mod+Shift+s exec flameshot gui
 
