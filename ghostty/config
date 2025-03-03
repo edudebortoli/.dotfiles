@@ -1,7 +1,10 @@
 background-opacity = 0.9
 window-decoration = false
-theme = zenbones_dark
+theme = Solarized Dark - Patched
 
+font-family = "BlexMono Nerd Font Mono"
+#font-family = "OverpassM Nerd Font"
+font-size = 10
 font-feature = -calt
 font-feature = -dlig
 font-feature = -liga

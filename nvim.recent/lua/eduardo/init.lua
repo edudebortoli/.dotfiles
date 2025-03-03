@@ -2,7 +2,7 @@ require("eduardo.remap")
 require("eduardo.options")
 require("eduardo.lazy_init")
 require("eduardo.open-env")
-vim.cmd([[colorscheme tokyobones]])
+vim.cmd([[colorscheme solarized-osaka]])
 
 function Hide()
 	-- Set transparent background
@@ -23,4 +23,4 @@ vim.api.nvim_create_user_command("Chat", function()
 	Chat()
 end, { nargs = 0 })
 
-Hide()
+--Hide()
