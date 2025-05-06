@@ -30,8 +30,6 @@ return { -- Autoformat
 			svelte = { { "prettierd", "prettier" } },
 			javascript = { "prettierd", "prettier" },
 			typescript = { "prettierd", "prettier" },
-			javascriptreact = { "prettierd", "prettier" },
-			typescriptreact = { "prettierd", "prettier" },
 			json = { "prettierd", "prettier" },
 			graphql = { "prettierd", "prettier" },
 			java = { "google-java-format" },

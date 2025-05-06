@@ -37,11 +37,42 @@ return {
 				"gopls",
 				"eslint",
 				"ts_ls",
+				"angularls",
+				"tsserver",
 			},
 			handlers = {
 				function(server_name) -- default handler (optional)
 					require("lspconfig")[server_name].setup({
 						capabilities = capabilities,
+						settings = {
+							Lua = {
+								runtime = { version = "Lua 5.1" },
+								diagnostics = {
+									globals = { "vim", "it", "describe", "before_each", "after_each" },
+								},
+							},
+						},
+					})
+				end,
+
+				["angularls"] = function()
+					require("lspconfig").angularls.setup({
+						capabilities = capabilities,
+						on_new_config = function(new_config, new_root_dir)
+							new_config.cmd = {
+								"ngserver",
+								"--stdio",
+								"--tsProbeLocations",
+								new_root_dir,
+								"--ngProbeLocations",
+								new_root_dir,
+							}
+							new_config.on_attach = function(client, bufnr)
+								client.server_capabilities.documentFormattingProvider = false
+							end
+						end,
+						filetypes = { "typescript", "html", "typescriptreact", "typescript.tsx" },
+						root_dir = require("lspconfig.util").root_pattern("angular.json", "project.json"),
 					})
 				end,
 

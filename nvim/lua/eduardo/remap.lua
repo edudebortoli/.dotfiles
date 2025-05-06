@@ -11,8 +11,8 @@ keymap.set("n", "x", '"_x')
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 --center when jump
-keymap.set("n", "<C-d>", "<C-d>zz")
-keymap.set("n", "<C-u>", "<C-u>zz")
+--keymap.set("n", "<C-d>", "<C-d>zz")
+--keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- Lazygit
 keymap.set("n", "<Leader>lg", ":LazyGit<CR>", { noremap = true, silent = true })

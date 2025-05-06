@@ -1,5 +1,5 @@
 if status is-interactive
-		nvm use 18 >&-
+		nvm use 20 >&-
 		#	echo welcome Eduardo
 		#	echo node 18
     # Commands to run in interactive sessions can go here
