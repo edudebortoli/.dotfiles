@@ -1,8 +1,8 @@
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
-		"williamboman/mason.nvim",
-		"williamboman/mason-lspconfig.nvim",
+		{ "williamboman/mason.nvim", version = "^1.0.0" },
+		{ "williamboman/mason-lspconfig.nvim", version = "^1.0.0" },
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
@@ -31,14 +31,15 @@ return {
 		require("fidget").setup({})
 		require("mason").setup()
 		require("mason-lspconfig").setup({
+			automatic_installation = false, -- or false if you prefer
+			-- ↓ add this line
+			automatic_setup = false, -- explicitly disable auto-setup if needed
 			ensure_installed = {
 				"lua_ls",
 				"rust_analyzer",
 				"gopls",
 				"eslint",
 				"ts_ls",
-				"angularls",
-				"tsserver",
 			},
 			handlers = {
 				function(server_name) -- default handler (optional)
@@ -52,27 +53,6 @@ return {
 								},
 							},
 						},
-					})
-				end,
-
-				["angularls"] = function()
-					require("lspconfig").angularls.setup({
-						capabilities = capabilities,
-						on_new_config = function(new_config, new_root_dir)
-							new_config.cmd = {
-								"ngserver",
-								"--stdio",
-								"--tsProbeLocations",
-								new_root_dir,
-								"--ngProbeLocations",
-								new_root_dir,
-							}
-							new_config.on_attach = function(client, bufnr)
-								client.server_capabilities.documentFormattingProvider = false
-							end
-						end,
-						filetypes = { "typescript", "html", "typescriptreact", "typescript.tsx" },
-						root_dir = require("lspconfig.util").root_pattern("angular.json", "project.json"),
 					})
 				end,
 

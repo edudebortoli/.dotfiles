@@ -8,7 +8,7 @@ return {
 		require("noice").setup(opts)
 
 		-- Map <Esc> in insert mode and command-line mode to dismiss notifications
-		vim.keymap.set({ "i", "n", "c" }, "<leader>m", function()
+		vim.keymap.set({ "n", "c" }, "<leader>m", function()
 			require("noice").cmd("dismiss")
 		end)
 	end,
