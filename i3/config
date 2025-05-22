@@ -289,10 +289,8 @@ bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
 # bindsym $mod+w exec /usr/bin/google-chrome
-bindsym $mod+w exec /usr/bin/firefox
-bindsym $mod+o exec /usr/bin/obsidian
+bindsym $mod+w exec /home/eduardo/.local/bin/zen
 bindsym $mod+n exec /usr/bin/nautilus
-bindsym $mod+b exec /usr/local/bin/bitwarden.AppImage
 
 # Power Profiles menu switcher (rofi)
 
@@ -315,9 +313,7 @@ set $ws10 "10"
 
 exec_always --no-startup-id picom 
 exec_always --no-startup-id nm-applet
-#exec_always --no-startup-id syncthing
 exec --no-startup-id blueberry-tray
-exec --no-startup-id syncthing
 
 #############################################
 # autostart applications/services on login: #
