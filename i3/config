@@ -22,7 +22,7 @@
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango: SpaceMono Nerd Font Regular 10
+font pango: Overpass Nerd Font
 
 # set the mod key to the winkey:
 set $mod Mod4
@@ -47,7 +47,7 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-new_window pixel 1
+#new_window pixel 1
 
 # thin borders
 # hide_edge_borders both
@@ -455,7 +455,7 @@ set $yellowbrown	#e1b700
 bar {
    	height 25
 		position top
-    font pango:OperatorMono Nerd Font 12
+    font pango: Overpass Nerd Font
 		status_command i3status
     tray_padding 1
     strip_workspace_numbers yes
